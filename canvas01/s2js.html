@@ -1,0 +1,798 @@
+<HTML>
+ <head>
+  <title> S2JS </title>
+  <style type="text/css">
+pre {
+color: #ff0000;
+background-color: #ffffff;
+}
+</style>
+ </head>
+<body>
+<textarea rows=7 cols=100>
+<canvas id=myCanvas width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx = myCanvas.getContext("2d");
+ctx.fillRect(10, 10, 20, 20);
+ctx.fillStyle= "red";
+ctx.fillRect(50, 50, 20, 40);
+</script>
+
+</textarea>
+<canvas id=myCanvas width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx = myCanvas.getContext("2d");
+ctx.fillRect(10, 10, 20, 20);
+ctx.fillStyle= "red";
+ctx.fillRect(50, 50, 20, 40);
+</script>
+<hr>
+
+<textarea rows=7 cols=100>
+<canvas id=myCanvas1 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx1 = myCanvas1.getContext("2d");
+ctx1.fillStyle= "green";
+ctx1.fillRect(60, 80, 70, 20);
+ctx1.lineWidth= 4;
+ctx1.strokeStyle= "red";
+ctx1.strokeRect(50, 50, 20, 40);
+</script>
+</textarea>
+<canvas id=myCanvas1 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx1 = myCanvas1.getContext("2d");
+ctx1.fillStyle= "green";
+ctx1.fillRect(60, 80, 70, 20);
+ctx1.lineWidth= 4;
+ctx1.strokeStyle= "red";
+ctx1.strokeRect(50, 50, 20, 40);
+</script>
+<hr>
+
+
+<textarea rows=7 cols=100>
+<canvas id=myCanvas2 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx2 = myCanvas2.getContext("2d");
+ctx2.font= "60px Arial";
+ctx2.fillText("Hello", 10, 50);
+ctx2.strokeText("Goodbyte", 10, 110);
+
+</script>
+</textarea>
+<canvas id=myCanvas2 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx2 = myCanvas2.getContext("2d");
+ctx2.font= "60px Arial";
+ctx2.fillText("Hello", 10, 50);
+ctx2.strokeText("Goodbyte", 10, 110);
+
+</script>
+<hr>
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas3 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx3 = myCanvas3.getContext("2d");
+ctx3.beginPath();
+ctx3.arc(150, 150, 50, 0, Math.PI * 2);
+ctx3.stroke();
+
+ctx3.beginPath();
+ctx3.arc(150, 150, 25, 0, Math.PI * 2);
+ctx3.stroke();
+ctx3.fillStyle= "green";
+ctx3.fill();
+
+</script>
+</textarea>
+<canvas id=myCanvas3 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx3 = myCanvas3.getContext("2d");
+ctx3.beginPath();
+ctx3.arc(150, 150, 50, 0, Math.PI * 2);
+ctx3.stroke();
+
+ctx3.beginPath();
+ctx3.arc(150, 150, 25, 0, Math.PI * 2);
+ctx3.stroke();
+ctx3.fillStyle= "green";
+ctx3.fill();
+
+</script>
+<hr>
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas4 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx4 = myCanvas4.getContext("2d");
+function fillCircle (x, y, radius, colour) {
+  ctx4.beginPath();
+  ctx4.fillStyle= colour;
+  ctx4.arc(x, y, radius, 0, Math.PI * 2);
+  ctx4.fill();
+  }
+
+fillCircle(120, 120, 40, "red");
+fillCircle(200, 200, 60, "blue");
+fillCircle(150, 150, 20, "green");
+</script>
+</textarea>
+<canvas id=myCanvas4 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx4 = myCanvas4.getContext("2d");
+function fillCircle (x, y, radius, colour) {
+  ctx4.beginPath();
+  ctx4.fillStyle= colour;
+  ctx4.arc(x, y, radius, 0, Math.PI * 2);
+  ctx4.fill();
+  }
+
+fillCircle(120, 120, 40, "red");
+fillCircle(200, 200, 60, "blue");
+fillCircle(150, 150, 20, "green");
+</script>
+<hr>
+
+
+<textarea rows=7 cols=100>
+<canvas id=myCanvas5 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx5 = myCanvas5.getContext("2d");
+var corner= 0;
+while (corner < 100) {
+  ctx5.strokeRect(corner, corner, 50, 50);
+  corner= corner + 5;
+  }
+
+</script>
+</textarea>
+<canvas id=myCanvas5 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx5 = myCanvas5.getContext("2d");
+var corner= 0;
+while (corner < 100) {
+  ctx5.strokeRect(corner, corner, 50, 50);
+  corner= corner + 5;
+  }
+
+</script>
+<hr>
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas6 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx6 = myCanvas6.getContext("2d");
+var corner6= 0;
+var size6= 2;
+while (corner6 < 100) {
+  ctx6.strokeRect(corner6, corner6, size6, size6);
+  corner6= corner6 + 2;
+  size6 = size6 + 2;
+  }
+</script>
+</textarea>
+<canvas id=myCanvas6 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx6 = myCanvas6.getContext("2d");
+var corner6= 0;
+var size6= 2;
+while (corner6 < 100) {
+  ctx6.strokeRect(corner6, corner6, size6, size6);
+  corner6= corner6 + 2;
+  size6 = size6 + 2;
+  }
+</script>
+<hr>
+
+<textarea rows=7 cols=100>
+<canvas id=myCanvas7 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx7 = myCanvas7.getContext("2d");
+for (var corner7= 0; corner7 < 100; corner7++) {
+    ctx7.strokeRect(corner7, corner7, 50, 50);
+    }
+
+</script>
+</textarea>
+<canvas id=myCanvas7 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx7 = myCanvas7.getContext("2d");
+for (var corner7= 0; corner7 < 100; corner7++) {
+    ctx7.strokeRect(corner7, corner7, 50, 50);
+    }
+
+</script>
+<hr>
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas8 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx8 = myCanvas8.getContext("2d");
+for (var corner= 0; corner < 100; corner= corner+5) {
+    if (corner < 50) {
+        ctx8.strokeStyle= "green";
+        }
+    else {
+        ctx8.strokeStyle= "red";
+        }
+    ctx8.strokeRect(corner, corner, 50, 50);
+    }
+</script>
+</textarea>
+<canvas id=myCanvas8 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx8 = myCanvas8.getContext("2d");
+for (var corner= 0; corner < 100; corner= corner+5) {
+    if (corner < 50) {
+        ctx8.strokeStyle= "green";
+        }
+    else {
+        ctx8.strokeStyle= "red";
+        }
+    ctx8.strokeRect(corner, corner, 50, 50);
+    }
+</script>
+<hr>
+<textarea rows=9 cols=100>
+<canvas id=myCanvas9 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx9 = myCanvas9.getContext("2d");
+
+ function RandInt(up_to) { 
+     n = Math.floor(Math.random() * up_to);  
+     return(n);  
+     } 
+
+ function CircleRandColour (x, y, radius) {
+  r = RandInt(3);   // r will be 0, 1 or 2
+  if (r == 0) {
+             ctx9.fillStyle = "red";
+             }
+  else if (r == 1) {
+             ctx9.fillStyle= "green";
+             }
+  else if (r == 2) {
+             ctx9.fillStyle= "blue";
+             }
+  ctx9.beginPath();
+  ctx9.arc(x, y, radius, 0, Math.PI * 2);
+  ctx9.fill();
+  }
+
+for (var i=0; i<=10; i++) {
+   CircleRandColour (RandInt(myCanvas.width), RandInt(myCanvas.height), RandInt(30)+1);
+   }
+   </script>
+
+</textarea>
+<canvas id=myCanvas9 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx9 = myCanvas9.getContext("2d");
+
+ function RandInt(up_to) { 
+     n = Math.floor(Math.random() * up_to);  
+     return(n);  
+     } 
+
+ function CircleRandColour (x, y, radius) {
+  r = RandInt(3);   // r will be 0, 1 or 2
+  if (r == 0) {
+             ctx9.fillStyle = "red";
+             }
+  else if (r == 1) {
+             ctx9.fillStyle= "green";
+             }
+  else if (r == 2) {
+             ctx9.fillStyle= "blue";
+             }
+  ctx9.beginPath();
+  ctx9.arc(x, y, radius, 0, Math.PI * 2);
+  ctx9.fill();
+  }
+
+for (var i=0; i<=10; i++) {
+   CircleRandColour (RandInt(myCanvas.width), RandInt(myCanvas.height), RandInt(30)+1);
+   }
+   </script>
+
+<hr>
+<textarea rows=9 cols=100>
+<canvas id=myCanvas10 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx10 = myCanvas10.getContext("2d");
+var y_pos = 0;
+
+function MyTimer () {
+  y_pos = y_pos + 4;
+  ctx10.strokeRect(120, y_pos, 60, 60);
+  }
+
+setInterval(MyTimer, 500);
+</script>
+</textarea>
+<canvas id=myCanvas10 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx10 = myCanvas10.getContext("2d");
+var y_pos = 0;
+
+function MyTimer () {
+  y_pos = y_pos + 4;
+  ctx10.strokeRect(120, y_pos, 60, 60);
+  }
+
+setInterval(MyTimer, 500);
+</script>
+<hr>
+<textarea rows=9 cols=100>
+<canvas id=myCanvas11 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx11 = myCanvas11.getContext("2d");
+var y_pos11 = 0;
+
+function MyTimer11 () {
+  ctx11.clearRect(0, 0, myCanvas11.width, myCanvas11.height);
+  y_pos11 = y_pos11 + 4;
+  ctx11.strokeRect(60, y_pos11, 60, 60);
+  ctx11.fillRect(180, y_pos, 60, 60);
+  }
+
+setInterval(MyTimer11, 500);
+</script>
+</textarea>
+<canvas id=myCanvas11 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx11 = myCanvas11.getContext("2d");
+var y_pos11 = 0;
+
+function MyTimer11 () {
+  ctx11.clearRect(0, 0, myCanvas11.width, myCanvas11.height);
+  y_pos11 = y_pos11 + 4;
+  ctx11.strokeRect(60, y_pos11, 60, 60);
+  ctx11.fillRect(180, y_pos, 60, 60);
+  }
+
+setInterval(MyTimer11, 500);
+</script>
+<hr>
+
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas12 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx12 = myCanvas12.getContext("2d");
+var y_pos12 = 0;
+var MyImg12 = new Image();
+MyImg12.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+function MyTimer12 () {
+  ctx12.clearRect(0, 0, myCanvas.width, myCanvas.height);
+  y_pos12 = y_pos12 + 1;
+  ctx12.drawImage(MyImg12, 130, y_pos12);
+  }
+
+setInterval(MyTimer12, 40);
+</script>
+</textarea>
+<canvas id=myCanvas12 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx12 = myCanvas12.getContext("2d");
+var y_pos12 = 0;
+var MyImg12 = new Image();
+MyImg12.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+function MyTimer12 () {
+  ctx12.clearRect(0, 0, myCanvas.width, myCanvas.height);
+  y_pos12 = y_pos12 + 1;
+  ctx12.drawImage(MyImg12, 130, y_pos12);
+  }
+
+setInterval(MyTimer12, 40);
+</script>
+<hr>
+
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas13 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx13 = myCanvas13.getContext("2d");
+var y_pos13 = 0;
+var MyImg13 = new Image();
+MyImg13.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+function MyTimer13 () {
+  ctx13.clearRect(0, 0, myCanvas13.width, myCanvas13.height);
+  y_pos13 = y_pos13 + 1;
+  ctx13.drawImage(MyImg13, 130, y_pos13);
+  ctx13.drawImage(MyImg13, 50, myCanvas13.height - y_pos13);
+  ctx13.drawImage(MyImg13, y_pos13, y_pos13);
+  }
+
+setInterval(MyTimer13, 40);
+
+</script>
+</textarea>
+<canvas id=myCanvas13 width=300 height=300 style="background-color: abcdef"></canvas>
+<script>
+var ctx13 = myCanvas13.getContext("2d");
+var y_pos13 = 0;
+var MyImg13 = new Image();
+MyImg13.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+function MyTimer13 () {
+  ctx13.clearRect(0, 0, myCanvas13.width, myCanvas13.height);
+  y_pos13 = y_pos13 + 1;
+  ctx13.drawImage(MyImg13, 130, y_pos13);
+  ctx13.drawImage(MyImg13, 50, myCanvas13.height - y_pos13);
+  ctx13.drawImage(MyImg13, y_pos13, y_pos13);
+  }
+
+setInterval(MyTimer13, 40);
+
+</script>
+<hr>
+
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas14 width=300 height=300 style="background-color: abcdef;">
+ </canvas>
+ <script>
+  var ctx14 = myCanvas14.getContext("2d");
+
+  var x_pos14 = 0;
+  var y_pos14 = 0;
+  var MyImg14 = new Image();
+  MyImg14.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+  function MyTimer14 () {
+    ctx14.clearRect(0, 0, myCanvas14.width, myCanvas14.height);
+    ctx14.drawImage(MyImg14, x_pos14, y_pos14);
+  }
+	
+  function MyKeyDownHandler14 (MyEvent14) {
+	  if (MyEvent14.keyCode == 37 && x_pos14 > 0) {x_pos14 = x_pos14 - 10;}   // left
+	  if (MyEvent14.keyCode == 38 && y_pos14 > 0) {y_pos14 = y_pos14 - 10;}   // up
+	  if (MyEvent14.keyCode == 39 && x_pos14+MyImg14.width < myCanvas14.width) {x_pos14 = x_pos14 + 10;}   // right
+	  if (MyEvent14.keyCode == 40 && y_pos14+MyImg14.height < myCanvas14.height) {y_pos14 = y_pos14 + 10;} // down
+	  MyEvent14.preventDefault();
+  }
+	
+setInterval(MyTimer14, 40);
+
+addEventListener("keydown", MyKeyDownHandler14);
+
+</script>
+</textarea>
+
+<canvas id=myCanvas14 width=300 height=300 style="background-color: abcdef;">
+ </canvas>
+ <script>
+  var ctx14 = myCanvas14.getContext("2d");
+
+  var x_pos14 = 0;
+  var y_pos14 = 0;
+  var MyImg14 = new Image();
+  MyImg14.src = "http://s2js.com/img/etc/cat_grumpy.png";
+
+  function MyTimer14 () {
+    ctx14.clearRect(0, 0, myCanvas14.width, myCanvas14.height);
+    ctx14.drawImage(MyImg14, x_pos14, y_pos14);
+  }
+	
+  function MyKeyDownHandler14 (MyEvent14) {
+	  if (MyEvent14.keyCode == 37 && x_pos14 > 0) {x_pos14 = x_pos14 - 10;}   // left
+	  if (MyEvent14.keyCode == 38 && y_pos14 > 0) {y_pos14 = y_pos14 - 10;}   // up
+	  if (MyEvent14.keyCode == 39 && x_pos14+MyImg14.width < myCanvas14.width) {x_pos14 = x_pos14 + 10;}   // right
+	  if (MyEvent14.keyCode == 40 && y_pos14+MyImg14.height < myCanvas14.height) {y_pos14 = y_pos14 + 10;} // down
+	  MyEvent14.preventDefault();
+  }
+	
+setInterval(MyTimer14, 40);
+addEventListener("keydown", MyKeyDownHandler14);
+
+</script>	
+<hr>
+
+
+<textarea rows=9 cols=100>
+<canvas id="myCanvas15" width=960 height=720 style="background:url('http://s2js.com/img/etc/boardwalk.png'); background-size: cover">
+  </canvas> 
+<script>
+
+ var ctx15 = myCanvas15.getContext("2d");
+
+
+ var bug_x15 = 0;
+ var bug_y15 = 0;
+ var BugImg15 = new Image();
+ BugImg15.src = "http://s2js.com/img/etc/ladybug.png";         // The bug
+
+ var melon_x15 = 0;
+ var melon_y15 = 0;
+ var MelonImg15 = new Image();
+ MelonImg15.src = "http://s2js.com/img/etc/watermelon2.png";  // The melon
+
+ var score15 = 0;
+ var melon_speed15 = 3;
+ var FPS15 = 40;                        // How many frames per second
+ var time_remaining15 = 20;
+
+
+ function restart_game15() {
+     // This gets called when the 'S' key is pressed and just sets 
+     // some important variables back to the start.
+     //
+     // Alternatively they could just reload the page
+     time_remaining15 = 20;
+     score15 = 0;
+     melon_speed15 = 3;
+     }
+
+ function ImagesTouching15(x1, y1, img1, x2, y2, img2) {
+          //
+          // This function detects whether two images are touching - very useful function
+          // 
+          if (x1 >= x2+img2.width || x1+img1.width <= x2) return false;   // too far to the side
+          if (y1 >= y2+img2.height || y1+img1.height <= y2) return false; // too far above/below
+          return true;                                                    // otherwise, overlap   
+          }
+
+
+ function Do_a_Frame15 () {
+    ctx15.clearRect(0, 0, myCanvas15.width, myCanvas15.height);                 // clear the background
+
+    ctx15.fillStyle= "purple";
+    ctx15.font = "20px Arial";
+    ctx15.fillText("Puntos: " + score15, 0, 20);                               // display the score15
+
+
+    bug_y15 = myCanvas15.height - BugImg15.height;                              // ensure bug always at bottom of canvas
+    ctx15.drawImage(BugImg15, bug_x15, bug_y15);                                  // and draw it
+
+    ctx15.fillText("Quedan: " + Math.round(time_remaining15), 0, 45); // display time remaining
+
+    if (time_remaining15 <= 0) {                                            // if the time has run out
+          ctx15.fillStyle= "red";
+          ctx15.font = "bold 50px Arial";                                   // say so
+          ctx15.textAlign="center";
+          ctx15.fillText("Fin", myCanvas15.width / 2, myCanvas15.height / 2);  
+          ctx15.font = "bold 20px Arial";
+          ctx15.fillText("Press S to play again", myCanvas15.width / 2, (myCanvas15.height / 2)+50);
+          ctx15.textAlign="left";
+          }
+    else {
+          time_remaining15 = time_remaining15 - 1/FPS15;                        // otherwise tick the time down
+
+          melon_y15 = melon_y15 + melon_speed15;                                // move the melon down the screen
+
+          if (melon_y15 > myCanvas15.height) {                                // if it's gone past the bottom
+              melon_y15= 0;                                                 // move it back to the top
+              melon_x15= Math.random() * (myCanvas15.width - MelonImg15.width); // pick a random x-position, always fully visible
+              }   
+          }
+
+    ctx15.drawImage(MelonImg15, melon_x15, melon_y15);                            // draw the melon
+
+    if (ImagesTouching15(bug_x15, bug_y15, BugImg15, melon_x15, melon_y15, MelonImg15)) {  // check for touching
+        score15= score15 + 1;                                                    // add one to score
+        melon_speed15 = melon_speed15 + 0.5;                                     // and make it fall a bit faster
+        melon_x15= -MelonImg15.width;                                            // hide the melon so the score doesn't rocket
+        }
+    } 
+
+ setInterval(Do_a_Frame15, 1000/FPS15);                                          // Call our frame renderer every this many milliseconds
+
+
+ function MyKeyDownHandler15 (MyEvent15) { 
+   if (MyEvent15.keyCode == 37 && bug_x15 > 0) {bug_x15 = bug_x15 - 10;}                          // left
+   if (MyEvent15.keyCode == 39 && bug_x15+BugImg15.width < myCanvas15.width) {bug_x15 = bug_x15+10;}  // right
+   if (MyEvent15.keyCode == 83) restart_game15();                                             // S to restart 
+   MyEvent15.preventDefault();
+   }
+
+ addEventListener("keydown", MyKeyDownHandler15);                      // listen for keystrokes  
+
+ myCanvas15.width = window.innerWidth - 20;                            // fill the entire browser width
+ myCanvas15.height = window.innerHeight - 20;                          // fill the entire browser height
+
+</script>
+</textarea>
+<canvas id="myCanvas15" width=200px height=300px style="background:url('http://s2js.com/img/etc/boardwalk.png'); background-size: cover">
+  </canvas> 
+<script>
+
+ var ctx15 = myCanvas15.getContext("2d");
+
+
+ var bug_x15 = 0;
+ var bug_y15 = 0;
+ var BugImg15 = new Image();
+ BugImg15.src = "http://s2js.com/img/etc/ladybug.png";         // The bug
+
+ var melon_x15 = 0;
+ var melon_y15 = 0;
+ var MelonImg15 = new Image();
+ MelonImg15.src = "http://s2js.com/img/etc/watermelon2.png";  // The melon
+
+ var score15 = 0;
+ var melon_speed15 = 3;
+ var FPS15 = 40;                        // How many frames per second
+ var time_remaining15 = 20;
+
+
+ function restart_game15() {
+     // This gets called when the 'S' key is pressed and just sets 
+     // some important variables back to the start.
+     //
+     // Alternatively they could just reload the page
+     time_remaining15 = 20;
+     score15 = 0;
+     melon_speed15 = 3;
+     }
+
+ function ImagesTouching15(x1, y1, img1, x2, y2, img2) {
+          //
+          // This function detects whether two images are touching - very useful function
+          // 
+          if (x1 >= x2+img2.width || x1+img1.width <= x2) return false;   // too far to the side
+          if (y1 >= y2+img2.height || y1+img1.height <= y2) return false; // too far above/below
+          return true;                                                    // otherwise, overlap   
+          }
+
+
+ function Do_a_Frame15 () {
+    ctx15.clearRect(0, 0, myCanvas15.width, myCanvas15.height);                 // clear the background
+
+    ctx15.fillStyle= "purple";
+    ctx15.font = "20px Arial";
+    ctx15.fillText("score: " + score15, 0, 20);                               // display the score15
+
+
+    bug_y15 = myCanvas15.height - BugImg15.height;                              // ensure bug always at bottom of canvas
+    ctx15.drawImage(BugImg15, bug_x15, bug_y15);                                  // and draw it
+
+    ctx15.fillText("Time Remaining: " + Math.round(time_remaining15), 0, 45); // display time remaining
+
+    if (time_remaining15 <= 0) {                                            // if the time has run out
+          ctx15.fillStyle= "red";
+          ctx15.font = "bold 50px Arial";                                   // say so
+          ctx15.textAlign="center";
+          ctx15.fillText("Game Over", myCanvas15.width / 2, myCanvas15.height / 2);  
+          ctx15.font = "bold 20px Arial";
+          ctx15.fillText("Press S to play again", myCanvas15.width / 2, (myCanvas15.height / 2)+50);
+          ctx15.textAlign="left";
+          }
+    else {
+          time_remaining15 = time_remaining15 - 1/FPS15;                        // otherwise tick the time down
+
+          melon_y15 = melon_y15 + melon_speed15;                                // move the melon down the screen
+
+          if (melon_y15 > myCanvas15.height) {                                // if it's gone past the bottom
+              melon_y15= 0;                                                 // move it back to the top
+              melon_x15= Math.random() * (myCanvas15.width - MelonImg15.width); // pick a random x-position, always fully visible
+              }   
+          }
+
+    ctx15.drawImage(MelonImg15, melon_x15, melon_y15);                            // draw the melon
+
+    if (ImagesTouching15(bug_x15, bug_y15, BugImg15, melon_x15, melon_y15, MelonImg15)) {  // check for touching
+        score15= score15 + 1;                                                    // add one to score
+        melon_speed15 = melon_speed15 + 0.5;                                     // and make it fall a bit faster
+        melon_x15= -MelonImg15.width;                                            // hide the melon so the score doesn't rocket
+        }
+    } 
+
+ setInterval(Do_a_Frame15, 1000/FPS15);                                          // Call our frame renderer every this many milliseconds
+
+
+ function MyKeyDownHandler15 (MyEvent15) { 
+   if (MyEvent15.keyCode == 37 && bug_x15 > 0) {bug_x15 = bug_x15 - 10;}                          // left
+   if (MyEvent15.keyCode == 39 && bug_x15+BugImg15.width < myCanvas15.width) {bug_x15 = bug_x15+10;}  // right
+   if (MyEvent15.keyCode == 83) restart_game15();                                             // S to restart 
+   MyEvent15.preventDefault();
+   }
+
+ addEventListener("keydown", MyKeyDownHandler15);                      // listen for keystrokes  
+
+ myCanvas15.width = window.innerWidth - 20;                            // fill the entire browser width
+ myCanvas15.height = window.innerHeight - 20;                          // fill the entire browser height
+
+</script>
+<hr>
+
+
+<textarea rows=9 cols=100>
+<canvas id=myCanvas16 height=200 width=250 style="background-color: khaki">
+   </canvas> 
+
+  <script>
+  var ctx16 = myCanvas16.getContext("2d");
+  function Leave_a_Mark16(MyWhere16) {
+   var rect = myCanvas16.getBoundingClientRect();
+   ctx16.beginPath();
+   ctx16.arc(MyWhere16.clientX - rect.left, MyWhere16.clientY - rect.top, 5, 0, Math.PI * 2);
+   ctx16.fill();
+   }
+
+function MyTouchMoveHandler16(MyEvent16) {
+   //MUCHOS DEDOS
+   for (var i=0; i < MyEvent.touches.length; i++) {
+        Leave_a_Mark(MyEvent.touches[i]);
+        }
+   MyEvent.preventDefault()
+   }
+
+function MyMouseMoveHandler16(MyEvent16) {
+   Leave_a_Mark16(MyEvent16);
+   }
+   
+   myCanvas16.addEventListener("touchmove", MyTouchMoveHandler16);
+myCanvas16.addEventListener("mousemove", MyMouseMoveHandler16);   
+</script>
+</textarea>
+ <canvas id=myCanvas16 height=200 width=250 style="background-color: khaki">
+   </canvas> 
+
+  <script>
+  var ctx16 = myCanvas16.getContext("2d");
+  function Leave_a_Mark16(MyWhere16) {
+   var rect = myCanvas16.getBoundingClientRect();
+   ctx16.beginPath();
+   ctx16.arc(MyWhere16.clientX - rect.left, MyWhere16.clientY - rect.top, 5, 0, Math.PI * 2);
+   ctx16.fill();
+   }
+
+function MyTouchMoveHandler16(MyEvent16) {
+   //MUCHOS DEDOS
+   for (var i=0; i < MyEvent.touches.length; i++) {
+        Leave_a_Mark(MyEvent.touches[i]);
+        }
+   MyEvent.preventDefault()
+   }
+
+function MyMouseMoveHandler16(MyEvent16) {
+   Leave_a_Mark16(MyEvent16);
+   }
+   
+   myCanvas16.addEventListener("touchmove", MyTouchMoveHandler16);
+myCanvas16.addEventListener("mousemove", MyMouseMoveHandler16);   
+</script>
+  
+  
+<hr>
+
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+<textarea rows=9 cols=100></textarea>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
